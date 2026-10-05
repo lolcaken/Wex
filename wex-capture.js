@@ -1,14 +1,5 @@
 // == WexDumper69 · runtime capture ==
-/*
- *  __        __   ____   __  __   ____     _   _    _ __ ___    ____     ____    _ __     __     ___
- *  \          /  |  _ \  \ \/ /  |  _ \   | | | |  | '_ ` _ \  |  _ \   |  _ \  | '__|   / /_   / _ \
- *   \    /\  /  | |_| |   \  /   | | | |  | | | |  | | | | | |  | |_) |  | |_| |  | |     | '_ \  | (_) |
- *    \  /  \/   |  __/   /_/\_\  | |_| |  | |_| |  |_| |_| |_|  |  __/   |  __/   |_|     | (_) |   \__, |
- *     \/  \/    |_|               |____/    \__,_|                |_|      |_|                \___/     /_/
- *
- *  WexDumper69 - universal WASM dumper
- *  https://github.com/lolcaken/Wex
- */
+/* WexDumper69 -- https://github.com/lolcaken/Wex */
 //
 // Paste this in the DevTools console of the GAME FRAME (not the page),
 // ideally before the game boots (or just reload right after pasting with

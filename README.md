@@ -1,9 +1,5 @@
 # Wex
 
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
-![Deps](https://img.shields.io/badge/dependencies-zero-brightgreen.svg)
-
 /* WexDumper69 -- https://github.com/lolcaken/Wex */
 
 Universal WASM dumper. Every function named, every call resolved. One file, zero dependencies.
