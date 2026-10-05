@@ -55,13 +55,16 @@ That's it. No install, no virtualenv, no build step. Output lands in
 Both outputs are stamped with the WexDumper69 banner:
 
 ```text
-#     #   ####   #   #  ####    #   #  ## ##   ####    ####   ##     ###    ###
-#     #  #        # #   #   #   #   #  # # #   #   #  #       #     #      #   #
-#  #  #   ###      #    #   #   #   #  # # #   ####    ###    #     ####    ####
-# # # #  #        # #   #   #   #   #  # # #   #      #       #     #   #      #
- ## ##    ####   #   #  ####     ###   # # #   #       ####   #      ###    ###
-  WexDumper69 - universal WASM dumper
-  https://github.com/lolcaken/Wex
+/*
+ *  __        __   ____   __  __   ____     _   _    _ __ ___    ____     ____    _ __     __     ___
+ *  \          /  |  _ \  \ \/ /  |  _ \   | | | |  | '_ ` _ \  |  _ \   |  _ \  | '__|   / /_   / _ \
+ *   \    /\  /  | |_| |   \  /   | | | |  | | | |  | | | | | |  | |_) |  | |_| |  | |     | '_ \  | (_) |
+ *    \  /  \/   |  __/   /_/\_\  | |_| |  | |_| |  |_| |_| |_|  |  __/   |  __/   |_|     | (_) |   \__, |
+ *     \/  \/    |_|               |____/    \__,_|                |_|      |_|                \___/     /_/
+ *
+ *  WexDumper69 - universal WASM dumper
+ *  https://github.com/lolcaken/Wex
+ */
 ```
 
 ---
