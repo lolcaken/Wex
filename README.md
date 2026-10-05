@@ -13,7 +13,27 @@ python wasmdump.py game.wasm [-o outdir]
 Outputs `<game>.wexdump/` with `map.json` (everything, resolved) and `report.txt` (summary).
 `funcs[i]` is index-addressable. `calls`/`callers` give you both directions of every edge.
 
-No `.wasm` file? Paste `wex-capture.js` in the game frame's console, reload,
-`wex.save(N)`, then dump the downloaded file. Details in the script header.
+## Run the dumper (.py)
+
+Needs Python 3.8+. Nothing to install.
+
+```bash
+python wasmdump.py game.wasm            # -> game.wexdump/map.json + report.txt
+python wasmdump.py game.wasm -o out/    # -> out/map.json + report.txt
+```
+
+## Run the capture hook (.js)
+
+For games that never hand you the `.wasm` file:
+
+1. Open the game in Chrome, hit **F12**.
+2. At the top of the console, switch the frame dropdown from `top` to the **game frame**.
+3. Paste all of `wex-capture.js`, Enter. You'll see `[wex] armed.`
+4. Reload the page (keep DevTools open).
+5. `wex.list()` — modules caught. `wex.save(0)` — downloads `wex-module-0.wasm`.
+6. `python wasmdump.py wex-module-0.wasm` — full map + report.
+
+Only works where the game actually ships wasm — pure-JS games catch nothing
+(verified: zero `.wasm` resources = zero modules, correctly).
 
 MIT — see [LICENSE](LICENSE).
