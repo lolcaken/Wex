@@ -24,16 +24,16 @@ python wasmdump.py game.wasm -o out/    # -> out/map.json + report.txt
 
 ## Run the capture hook (.js)
 
-For games that never hand you the `.wasm` file:
+For sites that never hand you the `.wasm` file:
 
-1. Open the game in Chrome, hit **F12**.
-2. At the top of the console, switch the frame dropdown from `top` to the **game frame**.
+1. Open the site in Chrome, hit **F12**.
+2. At the top of the console, switch the frame dropdown from `top` to the **game frame**. (use use the devtools picker tool and click canva)
 3. Paste all of `wex-capture.js`, Enter. You'll see `[wex] armed.`
 4. Reload the page (keep DevTools open).
 5. `wex.list()` — modules caught. `wex.save(0)` — downloads `wex-module-0.wasm`.
 6. `python wasmdump.py wex-module-0.wasm` — full map + report.
 
-Only works where the game actually ships wasm — pure-JS games catch nothing
+Only works where the site actually ships wasm — pure-JS games catch nothing
 (verified: zero `.wasm` resources = zero modules, correctly).
 
 MIT — see [LICENSE](LICENSE).
