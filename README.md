@@ -27,7 +27,7 @@ python wasmdump.py game.wasm -o out/    # -> out/map.json + report.txt
 For sites that never hand you the `.wasm` file:
 
 1. Open the site in Chrome, hit **F12**.
-2. At the top of the console, switch the frame dropdown from `top` to the **game frame**. (use use the devtools picker tool and click canva)
+2. At the top of the console, switch the frame dropdown from `top` to the **frame**. (or use the devtools picker tool and click on the frame)
 3. Paste all of `wex-capture.js`, Enter. You'll see `[wex] armed.`
 4. Reload the page (keep DevTools open).
 5. `wex.list()` — modules caught. `wex.save(0)` — downloads `wex-module-0.wasm`.
